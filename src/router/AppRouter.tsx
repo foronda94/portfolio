@@ -1,9 +1,20 @@
-import React from 'react'
+import { Routes, Route, Navigate } from 'react-router-dom'
+import { AboutMe } from '../pages/about-me/AboutMe'
+import Navbar from '../components/Navbar'
 
 export const AppRouter = () => {
   return (
     <>
-      <h1>Router</h1>
+      <Navbar />
+      <div className='container'>
+        <Routes>
+          <Route path="sobreMi" element={ <AboutMe /> } />
+          <Route />
+          <Route />
+          <Route />
+          <Route path="/" element={ <Navigate to="sobreMi"/> } />
+        </Routes>
+      </div>
     </>
   )
 }
