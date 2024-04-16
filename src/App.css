@@ -59,3 +59,15 @@ article:hover .ejemplo {
 .cursor-pointer {
   cursor: pointer;
 }
+
+.grow{
+  transition: 1s ease;
+  padding-top: 15px !important;
+}
+  
+.grow:hover{
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: 1s ease;
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import { CardData, CardProps  } from "../models/Cars"
+import { CardData, CardProps  } from "../models/Card"
 
 export const Card: React.FC<CardProps> = ({dataProject, handleOpenModal} ) => {
   

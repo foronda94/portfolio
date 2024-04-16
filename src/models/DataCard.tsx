@@ -1,6 +1,6 @@
 import coffeeList from '../assets/img/coffee-list.jpg'
 import translateApp from '../assets/img/translate-app.jpg'
-import { CardData  } from './Cars'
+import { CardData  } from './Card'
 
 export const WorkProjects = [
   {

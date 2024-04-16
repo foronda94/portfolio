@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Card } from '../../components/Card';
 import { PersonalProjects } from '../../models/DataCard';
 import Modal from '../../components/Modal';
-import { CardData } from '../../models/Cars';
+import { CardData } from '../../models/Card';
 import HighlightOffIcon from '@mui/icons-material/HighlightOff';
 
 export const Project = () => {
