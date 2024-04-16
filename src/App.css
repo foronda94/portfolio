@@ -13,3 +13,49 @@ body, html {
   align-items: center;
   justify-content: center;
 }
+
+.ejemplo {
+  --radius: 10px;
+  --inset: 2rem;
+  --inset-right: 0;
+  --offset: -1rem;
+  --inset-bottom: 0;
+  --inset-left: calc(var(--inset) / 2);
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0px;
+  left: 0;
+  margin: var(--offset);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: hsl(232.5deg 11.76% 13.33%);
+  color: var(--cp-grid-item-color);
+  clip-path: inset(var(--inset-top, var(--inset)) var(--inset-right, var(--inset)) var(--inset-bottom, var(--inset)) var(--inset-left, var(--inset)) round var(--radius));
+  contain: strict;
+  transition: clip-path .3s ease .1s;
+}
+
+article:hover .ejemplo {
+  clip-path: inset(0 0 0 0 round var(--radius));
+  transition-delay: 0s;
+  cursor: pointer;
+}
+
+.open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000000b8;
+}
+
+.modal-content {
+  width: 35%;
+  height: 50%;
+  padding: 20px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}

@@ -7,10 +7,17 @@ function Navbar() {
         className="navbar-brand"
         to="/"
       >
-        Bryan Foronda Agudelo
+        Bryan Foronda Agudelo{"</>"}
       </Link>
       <div className='navbar-collapse justify-content-end'>
         <div className='navbar-nav'>
+          <NavLink 
+            className={ ({ isActive }) => `nav-item nav-link ${ isActive ? "active" : "" } ` } 
+            to="/sobreMi"
+          >
+            Inicio
+          </NavLink>
+
           <NavLink 
             className={ ({ isActive }) => `nav-item nav-link ${ isActive ? "active" : "" } ` } 
             to="/sobreMi"
@@ -20,7 +27,7 @@ function Navbar() {
 
           <NavLink 
             className={ ({ isActive }) => `nav-item nav-link ${ isActive ? "active" : "" } ` }
-            to="/project"
+            to="/proyectos"
           >
             Proyectos
           </NavLink>

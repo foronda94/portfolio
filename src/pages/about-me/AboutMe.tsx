@@ -7,10 +7,10 @@ export const AboutMe = () => {
       <header>
         <img src={perfil} alt="logo" loading="lazy" width="300" height="300" className=""  />
       </header>
-      <footer>
-        <h2>Bryan Foronda Agudelo</h2>
-        <p>Programador Web React JS {"</>"}</p>
-        <p>Desarrollador web React js con experiencia en diseño y desarrollo de aplicaciones web utilizando tecnologias front-end.</p>
+      <footer style={{ width: "45vw", marginLeft: "30px" }}>
+        <h2 style={{fontSize: "3rem", lineHeight: "1" }}>Bryan Foronda Agudelo</h2>
+        <p style={{fontSize: "2rem", lineHeight: "1" }}>Desarrollador Web React JS {"</>"}</p>
+        <p style={{fontSize: "1.3rem", lineHeight: "2rem" }}>Con +5 años de experiencia en diseño y desarrollo de aplicaciones web utilizando tecnologias front-end. Amante de la programación y el aprendizaje.</p>
       </footer>
     </section>
   )
