@@ -13,14 +13,14 @@ function Navbar() {
         <div className='navbar-nav'>
           <NavLink 
             className={ ({ isActive }) => `nav-item nav-link ${ isActive ? "active" : "" } ` } 
-            to="/sobreMi"
+            to="/inicio"
           >
             Inicio
           </NavLink>
 
           <NavLink 
             className={ ({ isActive }) => `nav-item nav-link ${ isActive ? "active" : "" } ` } 
-            to="/sobreMi"
+            to="/sobre-mi"
           >
             Sobre mi
           </NavLink>

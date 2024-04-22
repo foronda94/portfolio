@@ -27,7 +27,7 @@ export const Project = () => {
   
 
   return (
-    <div className="animate__animated animate__fadeIn">
+    <div className="container-section animate__animated animate__fadeIn">
       <header>
         <h1 style={{fontSize: "3rem", lineHeight: "1" }}>Desafios</h1>
       </header>

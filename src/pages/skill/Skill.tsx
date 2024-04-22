@@ -4,12 +4,12 @@ import { SkillItem } from '../../models/Skill';
 
 export const Skill = () => {
   return (
-    <div className="animate__animated animate__fadeIn">
+    <div className="container-section animate__animated animate__fadeIn">
       <header style={{marginBottom: "30px"}}>
         <h1 style={{fontSize: "3rem", lineHeight: "1" }}>Habilidades.</h1>
       </header>
       <footer>
-        <section style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "4vw", width: "70vw" }}>
+        <section style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "4vw", width: "80vw" }}>
           {
             DataSkill.map(( skill: SkillItem ) => (
               <article className='grow  p-2' style={{borderRadius: "15px", background: "rgb(46 53 65 / 10%)", width: "14vw"}}>
