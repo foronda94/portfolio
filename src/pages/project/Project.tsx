@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import { Card } from '../../components/Card';
-import { PersonalProjects } from '../../models/DataCard';
+import { PersonalProjects, WorkProjects } from '../../models/DataProject';
 import Modal from '../../components/Modal';
 import { CardData } from '../../models/Card';
 import HighlightOffIcon from '@mui/icons-material/HighlightOff';
+import { ContainerProject } from './components/ContainerProject';
 
 export const Project = () => {
   
@@ -28,33 +29,38 @@ export const Project = () => {
 
   return (
     <div className="container-section animate__animated animate__fadeIn">
-      <header>
-        <h1 style={{fontSize: "3rem", lineHeight: "1" }}>Desafios</h1>
-      </header>
-      <footer>
-        <Card dataProject={PersonalProjects} handleOpenModal={handleOpenModal} />
-        {/* Acá va la modal y la logica para ella */}
-        <Modal isOpen={modalOpen} onClose={handleCloseModal} >
-          <header className='d-flex justify-content-between align-items-center'>
-            <h2>{currentModalData.name}</h2>
-            <span className='cursor-pointer' onClick={handleCloseModal}>
-              <HighlightOffIcon />
-            </span>
-          </header>
-          <footer style={{height: "-webkit-fill-available", position: "relative"}}>
-            <p>{currentModalData.information}</p>
-            <a 
-              className='btn btn-primary' 
-              onClick={handleCloseModal}
-              href={currentModalData.urlChallenge}
-              target="_blank"
-              style={{width: "100%", position: "absolute", bottom: "0px"}}
-            >
-              Ver Proyecto
-            </a>
-          </footer>
-        </Modal>
-      </footer>
+      <ContainerProject 
+        nameContainer="Proyectos Reales." 
+        dataProject={WorkProjects} 
+        handleOpenModal={handleOpenModal}
+        gridTemplateColumns="repeat(3, 1fr)"
+      />
+      <ContainerProject 
+        nameContainer="Desafios." 
+        dataProject={PersonalProjects} 
+        handleOpenModal={handleOpenModal}
+        gridTemplateColumns="repeat(2, 0fr)"
+       />
+      <Modal isOpen={modalOpen} onClose={handleCloseModal} >
+        <header className='d-flex justify-content-between align-items-center'>
+          <h2>{currentModalData.name}</h2>
+          <span className='cursor-pointer' onClick={handleCloseModal}>
+            <HighlightOffIcon />
+          </span>
+        </header>
+        <footer style={{height: "-webkit-fill-available", position: "relative"}}>
+          <p>{currentModalData.information}</p>
+          <a 
+            className='btn btn-primary' 
+            onClick={handleCloseModal}
+            href={currentModalData.urlProject}
+            target="_blank"
+            style={{width: "100%", position: "absolute", bottom: "0px"}}
+          >
+            Ver Proyecto
+          </a>
+        </footer>
+      </Modal>
     </div>
   )
 }

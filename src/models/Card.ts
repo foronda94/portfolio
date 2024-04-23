@@ -5,8 +5,8 @@ export interface CardData  {
   img: string,
   information: React.ReactNode,
   technologies: string[],
-  nameChallenge: string,
-  urlChallenge: string,
+  nameChallenge?: string,
+  urlProject?: string,
   urlPageChallenge?: string;
 }
 
