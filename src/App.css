@@ -17,7 +17,7 @@ body, html {
 
 .container > .container-section {
   position: absolute;
-  top: 40px;
+  top: 20px;
 }
 
 .ejemplo {
@@ -107,4 +107,14 @@ article:hover .ejemplo {
   justify-content: center;
   width: 20vw;
   max-width: 30vw;
+}
+
+.container__challenge--margin-bottom:last-child {
+  margin-top: 40px !important;
+  margin-bottom: 120px !important;
+}
+
+.container__challenge--margin-bottom > header {
+  border-bottom: 2px solid rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+  --bs-bg-opacity: 1;
 }

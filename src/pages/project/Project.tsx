@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { Card } from '../../components/Card';
+import { useState } from 'react';
+import Swal from 'sweetalert2';
 import { PersonalProjects, WorkProjects } from '../../models/DataProject';
 import Modal from '../../components/Modal';
 import { CardData } from '../../models/Card';
@@ -17,7 +17,7 @@ export const Project = () => {
     setCurrentModalData(modal)
   }
 
-  console.log('currentModalData', currentModalData);
+  console.log('currentModalData', currentModalData.urlProject);
   
 
   const handleCloseModal = () => {
@@ -25,12 +25,21 @@ export const Project = () => {
   }
 
   console.log('modalOpen', modalOpen);
+
+  const handleAlertProject = () => {
+    Swal.fire({
+      icon: "info",
+      title: "Oops...",
+      text: "El proyecto aún no ha salido a producción.",
+    });
+    handleCloseModal();
+  }
   
 
   return (
     <div className="container-section animate__animated animate__fadeIn">
       <ContainerProject 
-        nameContainer="Proyectos Reales." 
+        nameContainer="Proyectos." 
         dataProject={WorkProjects} 
         handleOpenModal={handleOpenModal}
         gridTemplateColumns="repeat(3, 1fr)"
@@ -50,15 +59,27 @@ export const Project = () => {
         </header>
         <footer style={{height: "-webkit-fill-available", position: "relative"}}>
           <p>{currentModalData.information}</p>
-          <a 
-            className='btn btn-primary' 
-            onClick={handleCloseModal}
-            href={currentModalData.urlProject}
-            target="_blank"
-            style={{width: "100%", position: "absolute", bottom: "0px"}}
-          >
-            Ver Proyecto
-          </a>
+          {
+              currentModalData.urlProject === ""
+              ?
+                <button 
+                  className='btn btn-primary'
+                  onClick={handleAlertProject}
+                  style={{width: "100%", position: "absolute", bottom: "0px"}}
+                >
+                  Ver Proyecto
+                </button>
+              :
+                <a 
+                  className='btn btn-primary'
+                  onClick={handleCloseModal}
+                  href={currentModalData.urlProject}
+                  target="_blank"
+                  style={{width: "100%", position: "absolute", bottom: "0px"}}
+                >
+                  Ver Proyecto
+                </a>
+          }
         </footer>
       </Modal>
     </div>
