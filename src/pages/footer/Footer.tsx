@@ -2,7 +2,7 @@ import React from 'react';
 import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
 import './Footer.css'; // Estilo CSS para el footer
 
-const Footer: React.FC = () => {
+export const Footer: React.FC = () => {
   return (
     <footer className="footer">
       <div className="footer__container">
@@ -26,5 +26,3 @@ const Footer: React.FC = () => {
     </footer>
   );
 };
-
-export default Footer;

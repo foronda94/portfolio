@@ -34,7 +34,7 @@ function Navbar() {
 
           <NavLink 
             className={ ({isActive}) => ` nav-item nav-link ${ isActive ? "active" : "" } ` }
-            to="/experience"
+            to="/experiencia"
           >
             Experiencia
           </NavLink>
@@ -44,13 +44,6 @@ function Navbar() {
             to="/Habilidades"
           >
             Habilidades
-          </NavLink>
-
-          <NavLink 
-            className={ ({isActive}) => ` nav-item nav-link ${ isActive ? "active" : "" } ` }
-            to="/contact"
-          >
-            Contacto
           </NavLink>
         </div>
       </div>

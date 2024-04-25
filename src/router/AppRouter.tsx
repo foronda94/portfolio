@@ -4,7 +4,8 @@ import Navbar from '../components/Navbar'
 import { Project } from '../pages/project/Project'
 import { Skill } from '../pages/skill/Skill'
 import { Introduction } from '../pages/introduction/Introduction'
-import Footer from '../pages/footer/Footer'
+import { Footer } from '../pages/footer/Footer'
+import { Experience } from '../pages/experience/Experience'
 
 export const AppRouter = () => {
   return (
@@ -15,7 +16,7 @@ export const AppRouter = () => {
           <Route path="inicio" element={ <Introduction /> } />
           <Route path="sobre-mi" element={ <AboutMe /> } />
           <Route path="proyectos" element={ <Project /> } />
-          <Route />
+          <Route path="experiencia" element={ <Experience /> } />
           <Route path="Habilidades" element={ <Skill /> } />
           <Route path="/" element={ <Navigate to="inicio"/> } />
         </Routes>
