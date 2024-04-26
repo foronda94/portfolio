@@ -55,7 +55,7 @@ export const Section = styled.section`
     }
 
     .profile__content--title-2 {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       line-height: 1;
     }
 
