@@ -29,7 +29,7 @@ function Navbar() {
         id="navbarSupportedContent"
       >
         <div className="navbar-nav w-100 justify-content-end">
-          <NavLink className="nav-item nav-link" to="/portfolio/inicio" onClick={closeNavMenu}>Inicio</NavLink>
+          <NavLink className="nav-item nav-link" to="/portfolio/" onClick={closeNavMenu}>Inicio</NavLink>
           <NavLink className="nav-item nav-link" to="/portfolio/sobre-mi" onClick={closeNavMenu}>Sobre mi</NavLink>
           <NavLink className="nav-item nav-link" to="/portfolio/proyectos" onClick={closeNavMenu}>Proyectos</NavLink>
           <NavLink className="nav-item nav-link" to="/portfolio/experiencia" onClick={closeNavMenu}>Experiencia</NavLink>
