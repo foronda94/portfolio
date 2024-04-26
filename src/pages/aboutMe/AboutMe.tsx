@@ -1,11 +1,12 @@
+import { Section } from "../../styled-components/aboutMe/AboutMe"
 
 
 export const AboutMe = () => {
 
   return (
-    <section className="container-section animate__animated animate__fadeIn" style={{left: "20px"}}>
-      <header style={{marginBottom: "30px"}}>
-        <h1 style={{fontSize: "3rem", lineHeight: "1" }}>Sobre mi.</h1>
+    <Section className="container-section animate__animated animate__fadeIn">
+      <header>
+        <h1>Sobre mi.</h1>
       </header>
       <footer>
         <p>¡Hola! Soy Bryan Stiven Foronda Agudelo, un apasionado Tecnólogo en análisis y desarrollo de sistemas de información. Desde que inicié mi carrera, me he dedicado a perfeccionar mis habilidades en el desarrollo de software, siempre buscando mejorar tanto profesional como personalmente.</p>
@@ -15,6 +16,6 @@ export const AboutMe = () => {
         {/*<p>Mi enfoque proactivo, mi capacidad para trabajar en equipo y mi pasión por el intercambio de conocimientos me han permitido no solo sobresalir en mis roles anteriores, sino también cultivar relaciones sólidas con colegas y colaboradores.</p>*/}
         <p>Estoy emocionado de seguir creciendo profesionalmente y enfrentar nuevos desafíos que me permitan seguir contribuyendo al mundo del desarrollo de software. Siempre estoy abierto a nuevas oportunidades y dispuesto a aportar mi experiencia y habilidades a proyectos innovadores y dinámicos.</p>
       </footer>
-    </section>
+    </Section>
   )
 }

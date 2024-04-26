@@ -1,40 +1,40 @@
 import React from "react";
 import { CardData  } from "../models/Card"
+import { SectionCard } from "../styled-components/project/Project";
 
 export const Card: React.FC<any> = ({dataProject, handleOpenModal, gridTemplateColumns} ) => {
   
   return (
-    <section style={{display: "grid", gridTemplateColumns: `${gridTemplateColumns}`, gap: "5vw" }}>
+    <SectionCard className="card__section" gridTemplateColumns={gridTemplateColumns}>
       {
         dataProject.map((project: CardData, i: number) => (
-          <article style={{ width: "23vw",background: "#212529", borderRadius: "10px", display: "grid", position: "relative", height: "100%", zIndex: "1" }} key={i}>
-            <div className="ejemplo"></div>
-            <header style={{ zIndex: "9" }}>
-              <img src={project.img} alt="project" height="10px" style={{ maxWidth: "-webkit-fill-available", borderRadius: "10px", backgroundAttachment: "revert-layer", width: "100%", display: "block", minHeight: "192px", objectFit: "cover"}} />
+          <article className="card__content" key={i}>
+            <div className="card__content--hover"></div>
+            <header>
+              <img src={project.img} alt="project" height="10px" />
             </header>
-            <footer style={{ padding: "10px 15px",zIndex: "9", color: "rgb(255, 255, 255)", position: "relative" }}>
+            <footer className="card__content--info">
               <h4>{project.name}</h4>
               {project?.nameChallenge && <h6>Desafio de: <a href={project.urlPageChallenge} target="_blank">{project.nameChallenge}</a></h6>}
-              <div style={{display: "flex", flexWrap: "wrap", flexDirection: "row"}}>
+              <div className="card__content--tag">
                 {
                   project.technologies.map((technologie: string, i: number) => (
-                    <span key={i} style={{ background: "#555555", borderRadius: "10px", padding: "7px",marginRight: "5px", marginTop: "5px"}}>{technologie}</span>
+                    <span key={i} className="card__content--tag-description">{technologie}</span>
                   ))
                 }
               </div>
-              <div style={{marginTop: "10px"}}>
+              <div className="mt-2">
                 <button
-                  style={{width: "100%"}} className="btn btn-primary"
+                  className="btn btn-primary w-100"
                   onClick={() => handleOpenModal(project)}
                 >
                   Ver Información
                 </button>
-                {/*<a style={{width: "100%"}} className="btn btn-primary" href={ project.urlChallenge } target="_blank">Ver</a>*/}
               </div>
             </footer>
           </article>
         ))
       }
-    </section>
+    </SectionCard>
   )
 }
