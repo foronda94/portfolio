@@ -48,5 +48,20 @@ export const Section = styled.section`
       padding: 20px;
       margin-left: 0;
     }
+
+    .profile__content--title {
+      font-size: 2.5rem;
+      line-height: 1;
+    }
+
+    .profile__content--title-2 {
+      font-size: 1.5rem;
+      line-height: 1;
+    }
+
+    .profile__content--description {
+      font-size: 1rem;
+      line-height: 2rem;
+    }
   }
 `;

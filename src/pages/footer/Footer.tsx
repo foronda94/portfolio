@@ -1,10 +1,10 @@
 import React from 'react';
 import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
-import './Footer.css'; // Estilo CSS para el footer
+import { FooterStyled } from '../../styled-components/footer/footer';
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="footer">
+    <FooterStyled className="footer">
       <div className="footer__container">
         <div className="footer__links">
           <a href="mailto:brianforonda94@gmail.com" className="footer__link">
@@ -16,13 +16,12 @@ export const Footer: React.FC = () => {
           <a href="https://github.com/tuusuario" className="footer__link" target='_blank'>
             <FaGithub /> GitHub
           </a>
-          {/* Agrega más enlaces aquí según necesites */}
         </div>
         <div className="footer__info">
-          {/* Información adicional, como derechos de autor, etc. */}
-          © 2024 Bryan Foronda Agudelo{"</>"} Todos los derechos reservados.
+          <span>© 2024 Bryan Foronda Agudelo{"</>"}</span>
+          <span> Todos los derechos reservados.</span>
         </div>
       </div>
-    </footer>
+    </FooterStyled>
   );
 };
