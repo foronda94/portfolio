@@ -72,6 +72,7 @@ export const Section = styled.section`
 
   .container__challenge--margin-bottom:last-child {
     margin-top: 40px !important;
+    margin-bottom: 100px !important;
   }
 
   @media (max-width: 640px) {
@@ -94,7 +95,7 @@ export const Section = styled.section`
 
     .container__challenge--margin-bottom:last-child {
       margin-top: 70px !important;
-      margin-bottom: 70px !important;
+      margin-bottom: 80px !important;
     }
 
   }

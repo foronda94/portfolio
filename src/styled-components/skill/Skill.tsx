@@ -4,7 +4,7 @@ export const Section = styled.section`
   &.contain__skill {
     width: 100%;
     padding: 0px 20px 20px;
-    margin-top: 70px;
+    padding-top: 70px;
   }
 
   header {

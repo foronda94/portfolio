@@ -2,6 +2,11 @@ import styled from "styled-components";
 
 
 export const Section = styled.section`
+
+  &.container-section {
+    margin-top: 70px;
+  }
+
   header {
     margin-bottom: 30px;
   }

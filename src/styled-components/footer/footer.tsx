@@ -4,9 +4,9 @@ import styled from "styled-components";
 export const FooterStyled = styled.footer`
   &.footer {
     width: 100%;
-    position: relative;
+    position: absolute;
     bottom: 0;
-    background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
+    background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity));
     --bs-bg-opacity: 1;
     padding: 20px 0;
   }
@@ -45,6 +45,10 @@ export const FooterStyled = styled.footer`
   }
 
   @media (max-width: 640px) {
+    &.footer {
+      position: relative;
+    }
+
     .footer__container {
       flex-direction: column;
     }

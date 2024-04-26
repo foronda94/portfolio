@@ -12,6 +12,9 @@ export const Section = styled.section`
     height: 300px;
     object-fit: cover; 
     border-radius: 50%;
+    position: relative;
+    object-position: top;
+    object-fit: cover;
   }
 
   .profile__content {
@@ -55,7 +58,7 @@ export const Section = styled.section`
   @media (max-width: 640px) {
     &.profile {
       flex-direction: column;
-      margin-top: 40px;
+      margin-top: 70px;
     }
 
     .profile__img--radio {
