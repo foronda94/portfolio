@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { ModalProps } from '../models/Modal';
-//import './Modal.css'; // Estilos para la modal
 
-const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
+const Modal = ({ isOpen, onClose, children }: ModalProps) => {
   const [isAnimating, setIsAnimating] = useState(false);
 
   const handleClose = () => {
@@ -10,7 +9,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
     setTimeout(() => {
       setIsAnimating(false);
       onClose();
-    }, 300); // Tiempo de animación en milisegundos
+    }, 300);
   };
 
   if (!isOpen && !isAnimating) return null;

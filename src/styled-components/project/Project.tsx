@@ -22,8 +22,16 @@ export const Section = styled.section`
     bottom: 0px;
   }
 
-  .card {
+  @media (max-width: 640px) {
+    .modal-content {
+      width: 80vw;
+      height: auto;
+    }
 
+    .modal__footer {
+      padding-bottom: 35px;
+    }
+    
   }
 `;
 
