@@ -33,7 +33,8 @@ export const Section = styled.section`
 
   @media (max-width: 640px) {
     &.profile {
-      flex-direction: column !important;
+      flex-direction: column;
+      margin-top: 40px;
     }
 
     .profile__img--radio {
