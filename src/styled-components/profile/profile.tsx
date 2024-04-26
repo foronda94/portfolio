@@ -66,6 +66,8 @@ export const Section = styled.section`
   }
 
   @media (max-height: 568px) {
-    
+    &.profile {
+      min-height: 115vh;
+    }
   }
 `;

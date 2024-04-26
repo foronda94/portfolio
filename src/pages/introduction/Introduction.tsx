@@ -17,7 +17,7 @@ export const Introduction = () => {
   };
 
   return (
-    <Section className="animate__animated animate__fadeIn container-profile profile">
+    <Section className="animate__animated animate__fadeIn profile">
       <header>
         <img src={perfil} alt="logo" loading="lazy" width="300" height="300" className="profile__img--radio" />
       </header>
