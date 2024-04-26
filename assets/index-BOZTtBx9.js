@@ -1020,10 +1020,6 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
       flex-direction: column;
     }
 
-    .footer__links {
-      flex-direction: column;
-    }
-
     .footer__info {
       margin-top: 10px;
       display: flex;
