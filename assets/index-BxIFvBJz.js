@@ -963,7 +963,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     }
 
     .profile__content--title-2 {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       line-height: 1;
     }
 
@@ -1025,6 +1025,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     }
 
     .footer__info {
+      margin-top: 10px;
       display: flex;
       flex-direction: column;
       align-items: center;
