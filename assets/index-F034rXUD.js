@@ -183,8 +183,16 @@ https://sweetalert2.github.io/#ajax-request`),x5(d),typeof d.title=="string"&&(d
     bottom: 0px;
   }
 
-  .card {
+  @media (max-width: 640px) {
+    .modal-content {
+      width: 80vw;
+      height: auto;
+    }
 
+    .modal__footer {
+      padding-bottom: 35px;
+    }
+    
   }
 `,e8=ii.section`
   &.card__section {
