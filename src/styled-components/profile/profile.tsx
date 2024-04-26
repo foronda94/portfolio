@@ -38,6 +38,9 @@ export const Section = styled.section`
 
     .profile__img--radio {
       border-radius: 100vw;
+      margin-top: 40px;
+      width: 200px;
+      height: 200px;
     }
 
     .profile__content {
