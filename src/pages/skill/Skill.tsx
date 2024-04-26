@@ -7,6 +7,7 @@ export const Skill = () => {
     <Section className='container-section animate__animated animate__fadeIn contain__skill'>
       <header>
         <h1>Habilidades.</h1>
+        <span className='container__project--header-underline'></span>
       </header>
       <footer>
         <section className='contain__skill--grid'>

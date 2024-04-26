@@ -10,7 +10,7 @@ export const Footer: React.FC = () => {
           <a href="mailto:brianforonda94@gmail.com" className="footer__link">
             <FaEnvelope /> Correo
           </a>
-          <a href="https://www.linkedin.com/tuperfil" className="footer__link" target='_blank'>
+          <a href="https://www.linkedin.com/in/bryan-stiven-foronda-agudelo-911a1918b" className="footer__link" target='_blank'>
             <FaLinkedin /> LinkedIn
           </a>
           <a href="https://github.com/tuusuario" className="footer__link" target='_blank'>

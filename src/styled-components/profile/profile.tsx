@@ -8,7 +8,10 @@ export const Section = styled.section`
   }
 
   .profile__img--radio {
-    border-radius: 20vw;
+    width: 300px;
+    height: 300px;
+    object-fit: cover; 
+    border-radius: 50%;
   }
 
   .profile__content {
@@ -60,6 +63,8 @@ export const Section = styled.section`
       margin-top: 40px;
       width: 200px;
       height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
     }
 
     .profile__content {

@@ -133,3 +133,18 @@ article:hover .card__content {
   padding-left: .5rem;
   padding-right: .5rem;
 }
+
+.container__project--header-underline {
+  position: absolute;
+  text-align: center;
+  display: inline-block;
+  width: 3vw;
+  border-bottom: 5px solid #fa756a;
+  border-radius: 20px;
+}
+
+@media (max-width: 640px) {
+  .container__project--header-underline {
+    width: 10vw;
+  }
+}

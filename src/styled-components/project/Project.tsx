@@ -66,14 +66,12 @@ export const Section = styled.section`
     transition: 1s ease;
   }
 
-  .container__challenge--margin-bottom:last-child {
-    margin-top: 40px !important;
-    margin-bottom: 70px !important;
+  .container__challenge--margin-bottom header {
+    margin-bottom: 3rem !important;
   }
 
-  .container__challenge--margin-bottom > header {
-    border-bottom: 2px solid rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
-    --bs-bg-opacity: 1;
+  .container__challenge--margin-bottom:last-child {
+    margin-top: 40px !important;
   }
 
   @media (max-width: 640px) {
@@ -88,6 +86,15 @@ export const Section = styled.section`
     
     .modal__content-siro {
       grid-template-columns: repeat(1, 1fr);
+    }
+
+    .container__challenge--margin-bottom header {
+      margin-bottom: 2rem !important;
+    }
+
+    .container__challenge--margin-bottom:last-child {
+      margin-top: 70px !important;
+      margin-bottom: 70px !important;
     }
 
   }

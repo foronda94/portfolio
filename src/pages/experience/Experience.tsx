@@ -6,6 +6,7 @@ export const Experience = () => {
     <Section className='container-section animate__animated animate__fadeIn'>
       <header>
         <h1>Experiencia.</h1>
+        <span className='container__project--header-underline'></span>
       </header>
       <footer>
         {dataExperience.map((experience) => (

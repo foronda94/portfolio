@@ -4,6 +4,8 @@ import styled from "styled-components";
 export const FooterStyled = styled.footer`
   &.footer {
     width: 100%;
+    position: relative;
+    bottom: 0;
     background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
     --bs-bg-opacity: 1;
     padding: 20px 0;

@@ -7,6 +7,7 @@ export const AboutMe = () => {
     <Section className="container-section animate__animated animate__fadeIn">
       <header>
         <h1>Sobre mi.</h1>
+        <span className='container__project--header-underline'></span>
       </header>
       <footer>
         <p>¡Hola! Soy Bryan Stiven Foronda Agudelo, un apasionado Tecnólogo en análisis y desarrollo de sistemas de información. Desde que inicié mi carrera, me he dedicado a perfeccionar mis habilidades en el desarrollo de software, siempre buscando mejorar tanto profesional como personalmente.</p>
