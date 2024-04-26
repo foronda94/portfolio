@@ -64,4 +64,8 @@ export const Section = styled.section`
       line-height: 2rem;
     }
   }
+
+  @media (max-height: 568px) {
+    
+  }
 `;
