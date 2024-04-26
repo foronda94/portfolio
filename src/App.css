@@ -9,15 +9,9 @@ body, html {
 
 .container {
   min-height: 90vh;
-  margin-top: 56px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.container > .container-section {
-  position: absolute;
-  top: 20px;
 }
 
 .ejemplo {

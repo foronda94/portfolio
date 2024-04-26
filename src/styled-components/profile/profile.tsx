@@ -64,16 +64,4 @@ export const Section = styled.section`
       line-height: 2rem;
     }
   }
-
-  @media (max-height: 568px) {
-    &.profile {
-      min-height: 115vh;
-    }
-  }
-
-  @media (max-height: 736px) {
-    &.profile {
-      min-height: 100vh;
-    }
-  }
 `;
