@@ -38,7 +38,7 @@ export const WorkProjects = [
         <span>
           SIRO es un sistema que permite a los usuarios realizar toda la gestión tramitada en la Secretaría de Infraestructura Física del Municipio de Medellín, facilitando realizar los flujos de trabajo por medio de sus diferentes módulos.
         </span>
-        <ul style={{display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "1vw", paddingLeft: "20px"}}>
+        <ul className="modal__content-siro">
           <li>Administración</li>
           <li>Anteproyectos</li>
           <li>Multimedia</li>

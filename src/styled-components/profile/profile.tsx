@@ -31,6 +31,24 @@ export const Section = styled.section`
     line-height: 2rem;
   }
 
+  .container-profile {
+    margin-bottom: 50px;
+  }
+
+  .myProfile__btn {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+    color: #fff;
+  }
+
+  .myProfile__btn span {
+    margin-left: 5px;
+  }
+
+  .myProfile__btn:hover {
+    color: rgba(255, 255, 255, .75);
+  }
+
   @media (max-width: 640px) {
     &.profile {
       flex-direction: column;
