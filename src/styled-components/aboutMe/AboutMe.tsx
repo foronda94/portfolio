@@ -14,6 +14,7 @@ export const Section = styled.section`
   @media (max-width: 640px) {
     &.animate__fadeIn {
       margin-top: 70px;
+      padding: 0px 20px 20px;
     }
   }
 
