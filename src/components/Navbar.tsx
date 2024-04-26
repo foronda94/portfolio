@@ -9,7 +9,7 @@ function Navbar() {
 
   return (
     <nav className='navbar navbar-expand-lg navbar-dark bg-dark'>
-      <Link className="navbar-brand" to="/">
+      <Link className="navbar-brand" to="/portfolio/inicio">
         Bryan Foronda Agudelo{"</>"}
       </Link>
       <button 
