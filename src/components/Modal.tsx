@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ModalProps } from '../models/modal';
+import { ModalProps } from '../models/Modal';
 //import './Modal.css'; // Estilos para la modal
 
 const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {

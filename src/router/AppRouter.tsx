@@ -13,12 +13,13 @@ export const AppRouter = () => {
       <Navbar />
       <div className='container position-relative'>
         <Routes>
-          <Route path="inicio" element={ <Introduction /> } />
-          <Route path="sobre-mi" element={ <AboutMe /> } />
-          <Route path="proyectos" element={ <Project /> } />
-          <Route path="experiencia" element={ <Experience /> } />
-          <Route path="Habilidades" element={ <Skill /> } />
+          <Route path="/portfolio/inicio" element={ <Introduction /> } />
+          <Route path="/portfolio/sobre-mi" element={ <AboutMe /> } />
+          <Route path="/portfolio/proyectos" element={ <Project /> } />
+          <Route path="/portfolio/experiencia" element={ <Experience /> } />
+          <Route path="/portfolio/Habilidades" element={ <Skill /> } />
           <Route path="/" element={ <Navigate to="inicio"/> } />
+          <Route path="/portfolio" element={ <Navigate to="inicio"/> } />
         </Routes>
       </div>
       <Footer />

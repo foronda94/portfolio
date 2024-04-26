@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
 function Navbar() {
@@ -29,11 +29,11 @@ function Navbar() {
         id="navbarSupportedContent"
       >
         <div className="navbar-nav w-100 justify-content-end">
-          <NavLink className="nav-item nav-link" to="/inicio" onClick={closeNavMenu}>Inicio</NavLink>
-          <NavLink className="nav-item nav-link" to="/sobre-mi" onClick={closeNavMenu}>Sobre mi</NavLink>
-          <NavLink className="nav-item nav-link" to="/proyectos" onClick={closeNavMenu}>Proyectos</NavLink>
-          <NavLink className="nav-item nav-link" to="/experiencia" onClick={closeNavMenu}>Experiencia</NavLink>
-          <NavLink className="nav-item nav-link" to="/habilidades" onClick={closeNavMenu}>Habilidades</NavLink>
+          <NavLink className="nav-item nav-link" to="/portfolio/inicio" onClick={closeNavMenu}>Inicio</NavLink>
+          <NavLink className="nav-item nav-link" to="/portfolio/sobre-mi" onClick={closeNavMenu}>Sobre mi</NavLink>
+          <NavLink className="nav-item nav-link" to="/portfolio/proyectos" onClick={closeNavMenu}>Proyectos</NavLink>
+          <NavLink className="nav-item nav-link" to="/portfolio/experiencia" onClick={closeNavMenu}>Experiencia</NavLink>
+          <NavLink className="nav-item nav-link" to="/portfolio/habilidades" onClick={closeNavMenu}>Habilidades</NavLink>
         </div>
       </div>
     </nav>

@@ -1,4 +1,3 @@
-import html from '../../assets/img/skill/html.webp';
 import { DataSkill } from '../../models/DataSkill';
 import { SkillItem } from '../../models/Skill';
 
