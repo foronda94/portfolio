@@ -70,4 +70,10 @@ export const Section = styled.section`
       min-height: 115vh;
     }
   }
+
+  @media (max-height: 736px) {
+    &.profile {
+      min-height: 100vh;
+    }
+  }
 `;
