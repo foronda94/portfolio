@@ -13,7 +13,7 @@ export const AppRouter = () => {
       <Navbar />
       <div className='container position-relative'>
         <Routes>
-          <Route path="/portfolio/inicio" element={ <Introduction /> } />
+          <Route path="/portfolio/" element={ <Introduction /> } />
           <Route path="/portfolio/sobre-mi" element={ <AboutMe /> } />
           <Route path="/portfolio/proyectos" element={ <Project /> } />
           <Route path="/portfolio/experiencia" element={ <Experience /> } />
