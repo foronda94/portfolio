@@ -9,8 +9,8 @@ export const Experience = () => {
         <span className='container__project--header-underline'></span>
       </header>
       <footer>
-        {dataExperience.map((experience) => (
-          <article className='d-flex align-items-center mb-5'>
+        {dataExperience.map((experience, i: number) => (
+          <article className='d-flex align-items-center mb-5' key={i}>
             <div className='experience__content--button'>
               <h4>{experience.position}</h4>
               <span>{experience.date}</span>

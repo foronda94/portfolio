@@ -12,8 +12,8 @@ export const Skill = () => {
       <footer>
         <section className='contain__skill--grid'>
           {
-            DataSkill.map(( skill: SkillItem ) => (
-              <article className='grow contain__skill--grid-box p-2'>
+            DataSkill.map(( skill: SkillItem, i: number ) => (
+              <article className='grow contain__skill--grid-box p-2' key={i}>
                 <span className='d-flex justify-content-center align-items-center flex-column'>
                   {
                     (skill.name === 'Styled-Components' || skill.name === 'TypeScript')
