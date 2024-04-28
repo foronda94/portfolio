@@ -54,18 +54,6 @@ export const Section = styled.section`
     transition: 1s ease;
   }
 
-  .grow{
-    transition: 1s ease;
-    padding-top: 15px !important;
-  }
-    
-  .grow:hover{
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
-    transition: 1s ease;
-  }
-
   .container__challenge--margin-bottom header {
     margin-bottom: 3rem !important;
   }

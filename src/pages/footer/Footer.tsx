@@ -18,7 +18,7 @@ export const Footer: React.FC = () => {
           </a>
         </div>
         <div className="footer__info">
-          <span>© 2024 Bryan Foronda Agudelo{"</>"}</span>
+          <span>© 2024 Bryan Foronda Agudelo {"</>"}</span>
           <span> Todos los derechos reservados.</span>
         </div>
       </div>

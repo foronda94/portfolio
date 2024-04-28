@@ -7,9 +7,21 @@ export const Section = styled.section`
     padding-top: 70px;
   }
 
+  .grow{
+    transition: 1s ease;
+    padding-top: 15px !important;
+  }
+    
+  .grow:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s ease;
+  }
+
   header {
     margin-bottom: 30px;
-  }
+  } 
 
   header h1 {
     font-size: 3rem;
@@ -49,6 +61,11 @@ export const Section = styled.section`
 
     .contain__skill--grid-box:last-child {
       margin-bottom: 20px;
+    }
+
+    .grow:hover{
+      -webkit-transform: none;
+      transform: none;
     }
   }
 `;
