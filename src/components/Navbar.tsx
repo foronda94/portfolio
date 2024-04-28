@@ -30,13 +30,13 @@ function Navbar() {
       >
         <div className="navbar-nav w-100 justify-content-end">
           <NavLink 
-          className="nav-item nav-link"
-          to="/portfolio/"
-          onClick={closeNavMenu}
-          end
-        >
-          Inicio
-        </NavLink>
+            className={ ({isActive}) => `nav-item nav-link ${ isActive ? "active" : "" }` }
+            to="/portfolio/"
+            onClick={closeNavMenu}
+            end
+          >
+            Inicio
+          </NavLink>
           <NavLink className={ ({isActive}) => `nav-item nav-link ${ isActive ? "active" : "" }` } to="/portfolio/sobre-mi" onClick={closeNavMenu}>Sobre mi</NavLink>
           <NavLink className={ ({isActive}) => `nav-item nav-link ${ isActive ? "active" : "" }` } to="/portfolio/proyectos" onClick={closeNavMenu}>Proyectos</NavLink>
           <NavLink className={ ({isActive}) => `nav-item nav-link ${ isActive ? "active" : "" }` } to="/portfolio/experiencia" onClick={closeNavMenu}>Experiencia</NavLink>
