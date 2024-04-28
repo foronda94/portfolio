@@ -13,7 +13,7 @@ export const Footer: React.FC = () => {
           <a href="https://www.linkedin.com/in/bryan-stiven-foronda-agudelo-911a1918b" className="footer__link" target='_blank'>
             <FaLinkedin /> LinkedIn
           </a>
-          <a href="https://github.com/tuusuario" className="footer__link" target='_blank'>
+          <a href="https://github.com/foronda94" className="footer__link" target='_blank'>
             <FaGithub /> GitHub
           </a>
         </div>
