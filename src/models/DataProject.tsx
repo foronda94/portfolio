@@ -12,14 +12,14 @@ export const WorkProjects = [
     name: "Colrunners",
     img: Colrunners,
     information: "En COLRUNNERS promueven el estilos de vida saludable a través de la planeación, dirección y acompañamiento del proceso deportivo de sus usuarios. Llevan 6 años de trayectoria acompañando a cientos de personas a alcanzar sus metas deportivas, mejora en su condición física enfocados en contribuir en un equilibrio y bienestar integral.",
-    technologies: ['HTML', 'CSS3', "Styled-Component", "React", "JavaScript"],
+    technologies: ['HTML', 'CSS3', "React", "JavaScript", "Styled-Component"],
     urlProject: "",
   },
   {
     name: "Roalytics",
     img: Roalytics,
     information: "Se integran a las herramientas de marketing de un negocio para presentar de forma clara un dashboard de métricas que permita optimizar el rendimiento de las acciones de marketing aumentando la rentabilidad de la empresa. Ayudan a empresas a optimizar la rentabilidad de su marketing para escalar más rápido a través de la claridad en sus números reales.",
-    technologies: ['HTML', 'CSS3', "Styled-Component", "React", "JavaScript"],
+    technologies: ['HTML', 'CSS3', "React", "JavaScript", "Styled-Component"],
     urlProject: "",
   },
   {

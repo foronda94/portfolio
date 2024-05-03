@@ -22,7 +22,7 @@ export const Introduction = () => {
         <img src={perfil} alt="logo" loading="lazy" width="300" height="300" className="profile__img--radio" />
       </header>
       <footer className='profile__content'>
-        <h2 className='profile__content--title'>Bryan Foronda Agudelo.</h2>
+        <h2 className='profile__content--title'>Bryan Foronda Agudelo</h2>
         <p className='profile__content--title-2'>Desarrollador Web React JS {"</>"}</p>
         <p className='profile__content--description'>Con +5 años de experiencia en diseño y desarrollo de aplicaciones web utilizando tecnologias front-end. Amante de la programación y el aprendizaje.</p>
         <div className='d-flex justify-content-end'>

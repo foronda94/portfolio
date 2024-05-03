@@ -30,6 +30,7 @@ export const Section = styled.section`
   .profile__content--title-2 {
     font-size: 2rem;
     line-height: 1;
+    font-family: 'Poppins-Medium';
   }
 
   .profile__content--description {

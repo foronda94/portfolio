@@ -54,7 +54,7 @@ export const Section = styled.section`
     transition: 1s ease;
   }
 
-  .container__challenge--margin-bottom header {
+  .container__challenge--title {
     margin-bottom: 3rem !important;
   }
 
@@ -77,7 +77,7 @@ export const Section = styled.section`
       grid-template-columns: repeat(1, 1fr);
     }
 
-    .container__challenge--margin-bottom header {
+    .container__challenge--title {
       margin-bottom: 2rem !important;
     }
 

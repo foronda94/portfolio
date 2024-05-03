@@ -1,3 +1,22 @@
+@font-face {
+  font-family: 'Poppins-SemiBold';
+  src: url('./assets/fonts/Poppins-SemiBold.ttf') format('truetype');
+  /* Si tienes otras fuentes o formatos, puedes agregarlos aquí */
+}
+
+@font-face {
+  font-family: 'Poppins-Medium';
+  src: url('./assets/fonts/Poppins-Medium.ttf') format('truetype');
+  /* Si tienes otras fuentes o formatos, puedes agregarlos aquí */
+}
+
+@font-face {
+  font-family: 'Poppins-Light';
+  src: url('./assets/fonts/Poppins-Light.ttf') format('truetype');
+  /* Si tienes otras fuentes o formatos, puedes agregarlos aquí */
+}
+
+
 * {
   box-sizing: border-box;
 }
@@ -41,4 +60,24 @@ body, html {
   .container__project--header-underline {
     width: 10vw;
   }
+}
+
+h1, h2 {
+  font-family: 'Poppins-SemiBold', sans-serif;
+}
+
+h4 {
+  font-family: 'Poppins-Medium';
+}
+
+p, span {
+  font-family: 'Poppins-Light';
+}
+
+.navbar-brand, .nav-item {
+  font-family: 'Poppins-Medium';
+}
+
+.footer__container {
+  font-family: 'Poppins-Light';
 }
