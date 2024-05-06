@@ -56,12 +56,6 @@ body, html {
   border-radius: 20px;
 }
 
-@media (max-width: 640px) {
-  .container__project--header-underline {
-    width: 10vw;
-  }
-}
-
 h1, h2 {
   font-family: 'Poppins-SemiBold', sans-serif;
 }
@@ -80,4 +74,14 @@ p, span, button {
 
 .footer__container {
   font-family: 'Poppins-Light';
+}
+
+@media (max-width: 640px) {
+  .container__project--header-underline {
+    width: 10vw;
+  }
+
+  .navbar-brand {
+    margin-right: 0px;
+  }
 }
